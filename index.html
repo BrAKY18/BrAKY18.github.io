@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ilan Brabri — Étudiant ingénieur ENSEEIHT 3EA</title>
+<meta name="description" content="Portfolio d’Ilan Brabri, étudiant ingénieur à l’ENSEEIHT, spécialité 3EA.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  body{font-family:Inter,system-ui,sans-serif;background:#090d16;color:#cbd5e1}
+  .grad{background:linear-gradient(90deg,#22d3ee,#a855f7);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .card{background:linear-gradient(145deg,#161d2e,#0f1523);border:1px solid #1f2a40}
+  .glow:hover{border-color:#22d3ee;box-shadow:0 0 28px -8px #22d3ee88}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.on{opacity:1;transform:none}
+  .tab.active{background:linear-gradient(90deg,#22d3ee,#a855f7);color:#090d16}
+  .bg-grid{background-image:radial-gradient(circle at 20% 10%,#22d3ee22,transparent 40%),radial-gradient(circle at 85% 30%,#a855f722,transparent 40%)}
+  :focus-visible{outline:2px solid #22d3ee;outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-[#090d16]/60 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+    <a href="#accueil" class="font-extrabold text-white">Ilan <span class="grad">Brabri</span></a>
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="#video" class="hover:text-cyan-400">Vidéo</a>
+      <a href="#parcours" class="hover:text-cyan-400">Parcours</a>
+      <a href="#projets" class="hover:text-cyan-400">Projets</a>
+      <a href="#experiences" class="hover:text-cyan-400">Expériences</a>
+      <a href="#competences" class="hover:text-cyan-400">Compétences</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </div>
+    <button id="burger" class="md:hidden text-xl" aria-label="Ouvrir le menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobmenu" class="hidden md:hidden px-5 pb-4 flex-col gap-3 text-sm">
+    <a href="#video">Vidéo</a><a href="#parcours">Parcours</a><a href="#projets">Projets</a><a href="#experiences">Expériences</a><a href="#competences">Compétences</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="accueil" class="bg-grid min-h-screen flex items-center pt-20 pb-12">
+  <div class="max-w-4xl mx-auto px-5">
+    <h1 class="text-5xl sm:text-7xl font-extrabold text-white tracking-tight">Brabri <span class="grad">Ilan</span></h1>
+    <p class="mt-4 text-lg sm:text-xl text-cyan-300 font-medium">Étudiant Ingénieur ENSEEIHT — Spécialité 3EA (Électronique, Énergie Électrique, Automatique)</p>
+    <p class="mt-6 max-w-2xl leading-relaxed text-slate-300">Passionné par le hardware, le software et l’ingénierie électrique, j’aime explorer et comprendre les systèmes dans leur globalité. La prépa m’a transmis une méthode rigoureuse de résolution de problèmes et de débogage méthodique, des compétences que j’applique autant au développement logiciel qu’aux systèmes physiques.</p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="mailto:ilandu26@outlook.com" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 text-[#090d16] font-semibold hover:scale-105 transition"><i class="fa-solid fa-envelope mr-2"></i>ilandu26@outlook.com</a>
+      <a href="https://www.linkedin.com/search/results/all/?keywords=Ilan%20Brabri" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full card glow transition"><i class="fa-brands fa-linkedin mr-2 text-cyan-400"></i>Ilan Brabri</a>
+      <a href="https://github.com/BrAKY18" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-full card glow transition"><i class="fa-brands fa-github mr-2 text-violet-400"></i>BrAKY18</a>
+      <a href="tel:+33767178929" class="px-5 py-2.5 rounded-full card glow transition"><i class="fa-solid fa-phone mr-2 text-cyan-400"></i>07 67 17 89 29</a>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-5 space-y-28 pb-28">
+
+<!-- VIDEO -->
+<section id="video" class="reveal scroll-mt-24">
+  <h2 class="text-3xl font-extrabold text-white mb-8">Présentation <span class="grad">Vidéo</span></h2>
+  <div class="grid lg:grid-cols-3 gap-8 items-center">
+    <div class="lg:col-span-2 card rounded-2xl p-2 shadow-[0_0_60px_-20px_#a855f7]">
+      <div class="aspect-video rounded-xl overflow-hidden bg-black">
+        <!-- Remplace l’identifiant de la vidéo (jNQXAC9IVRw = exemple) par celui de ta vidéo YouTube -->
+        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw" title="Présentation vidéo" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="leading-relaxed text-lg">Retrouvez en 2 minutes mon parcours, mes motivations et ma vision de l’ingénierie.</p>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours" class="reveal scroll-mt-24">
+  <h2 class="text-3xl font-extrabold text-white mb-8">Parcours &amp; <span class="grad">Formation</span></h2>
+  <div class="relative border-l-2 border-slate-700 ml-3 space-y-10">
+    <div class="pl-8 relative">
+      <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 ring-4 ring-cyan-400/20"></span>
+      <p class="text-sm text-cyan-400 font-semibold">2026 – Présent</p>
+      <h3 class="text-xl font-bold text-white">ENSEEIHT (Toulouse)</h3>
+      <p class="mt-1">1ʳᵉ année d’École d’Ingénieur en filière 3EA.</p>
+    </div>
+    <div class="pl-8 relative">
+      <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-violet-500 ring-4 ring-violet-500/20"></span>
+      <p class="text-sm text-violet-400 font-semibold">2024 – 2026</p>
+      <h3 class="text-xl font-bold text-white">Lycée du Parc (Lyon)</h3>
+      <p class="mt-1">CPGE filière MP2I puis MPI. Acquisition de solides compétences théoriques en algorithmique, OCaml, C et physique. Développement de l’autonomie et du travail sous contrainte.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets" class="reveal scroll-mt-24">
+  <h2 class="text-3xl font-extrabold text-white mb-2">Projets &amp; <span class="grad">Réalisations</span></h2>
+  <p class="mb-8 text-slate-400">Clique sur une carte pour voir le détail.</p>
+  <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" class="reveal scroll-mt-24">
+  <h2 class="text-3xl font-extrabold text-white mb-8">Expériences &amp; <span class="grad">qualités terrain</span></h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <article class="card glow rounded-2xl p-6 transition">
+      <i class="fa-solid fa-industry text-2xl text-cyan-400"></i>
+      <h3 class="mt-3 text-lg font-bold text-white">Agent de production agroalimentaire</h3>
+      <p class="text-sm text-slate-400">Usine de transformation</p>
+      <p class="mt-3 text-sm leading-relaxed">Rigueur sous contrainte de cadence élevée, autonomie dans la gestion d’incidents machines, prises d’initiative immédiates pour éviter les arrêts de chaîne, adaptabilité et discipline.</p>
+    </article>
+    <article class="card glow rounded-2xl p-6 transition">
+      <i class="fa-solid fa-pizza-slice text-2xl text-violet-400"></i>
+      <h3 class="mt-3 text-lg font-bold text-white">Restauration</h3>
+      <p class="text-sm text-slate-400">Pizzeria familiale</p>
+      <p class="mt-3 text-sm leading-relaxed">Relationnel client, encaissement, gestion du stress et réactivité en période d’affluence.</p>
+    </article>
+    <article class="card glow rounded-2xl p-6 transition">
+      <i class="fa-solid fa-volleyball text-2xl text-cyan-400"></i>
+      <h3 class="mt-3 text-lg font-bold text-white">Pratique du volley-ball</h3>
+      <p class="text-sm text-slate-400">Sport collectif</p>
+      <p class="mt-3 text-sm leading-relaxed">Esprit d’équipe, engagement total, dépassement de soi et communication sur le terrain.</p>
+    </article>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences" class="reveal scroll-mt-24">
+  <h2 class="text-3xl font-extrabold text-white mb-8"><span class="grad">Compétences</span></h2>
+  <div id="tabs" class="flex flex-wrap gap-2 mb-6" role="tablist"></div>
+  <div id="badges" class="flex flex-wrap gap-3 min-h-[8rem]"></div>
+</section>
+
+</main>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact" class="border-t border-white/10 bg-[#0b1020] py-16 scroll-mt-14">
+  <div class="max-w-5xl mx-auto px-5 grid md:grid-cols-2 gap-10">
+    <div>
+      <h2 class="text-3xl font-extrabold text-white mb-3">Me <span class="grad">contacter</span></h2>
+      <p class="mb-6">Un projet, un stage, une question ? Écris-moi.</p>
+      <div class="flex gap-3 text-xl">
+        <a href="https://github.com/BrAKY18" target="_blank" rel="noopener" aria-label="GitHub" class="w-11 h-11 grid place-items-center rounded-full card glow transition"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Ilan%20Brabri" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-11 h-11 grid place-items-center rounded-full card glow transition"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:ilandu26@outlook.com" aria-label="Email" class="w-11 h-11 grid place-items-center rounded-full card glow transition"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <form id="form" class="space-y-4">
+      <input required placeholder="Nom" class="w-full px-4 py-3 rounded-xl bg-[#111827] border border-slate-700 focus:border-cyan-400 outline-none">
+      <input required type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-[#111827] border border-slate-700 focus:border-cyan-400 outline-none">
+      <textarea required rows="4" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-[#111827] border border-slate-700 focus:border-cyan-400 outline-none"></textarea>
+      <button class="px-6 py-3 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 text-[#090d16] font-semibold hover:scale-105 transition">Envoyer le message</button>
+      <p id="sent" class="hidden text-cyan-300 text-sm">Message envoyé (formulaire de démonstration, rien n’est transmis).</p>
+    </form>
+  </div>
+  <p class="text-center text-xs text-slate-500 mt-12">© 2026 Ilan Brabri</p>
+</footer>
+
+<!-- MODALE -->
+<div id="modal" class="hidden fixed inset-0 z-50 grid place-items-center p-4 bg-black/70 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="card rounded-2xl max-w-lg w-full p-7 relative shadow-[0_0_60px_-15px_#22d3ee]">
+    <button id="m-close" class="absolute top-4 right-4 text-xl text-slate-400 hover:text-white" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+    <i id="m-icon" class="text-3xl text-cyan-400"></i>
+    <h3 id="m-title" class="mt-3 text-2xl font-bold text-white"></h3>
+    <div id="m-tags" class="mt-3 flex flex-wrap gap-2"></div>
+    <p id="m-desc" class="mt-4 leading-relaxed"></p>
+  </div>
+</div>
+
+<script>
+const projects = [
+  {icon:"fa-spider",title:"Bot de scrapping & analyse de marché hardware",tags:["Python","Web Scrapping","Hardware PC"],short:"Annonces Leboncoin et composants informatiques.",desc:"Découverte du scrapping d’annonces Leboncoin, gestion des restrictions robots/captchas et analyse comparative des composants informatiques pour l’achat-revente et l’assemblage personnalisé de machines."},
+  {icon:"fa-gamepad",title:"Architecture d’un moteur de jeu en C (Snake)",tags:["Langage C","Algorithmique","E/S Système"],short:"Extension avancée d’un projet académique.",desc:"Extension avancée d’un projet académique : gestion des entrées clavier non-bloquantes, manipulation de structures de données dynamiques, gestion de la mémoire et persistance des scores."},
+  {icon:"fa-microchip",title:"TIPE — Conception de processeur sur table d’essai",tags:["Logique numérique","Hardware","Électronique"],short:"Les blocs fondamentaux d’un CPU.",desc:"Étude et initiation à la création des blocs fondamentaux d’un CPU (gestion de l’horloge système, registres et circuits combinatoires/séquentiels)."},
+  {icon:"fa-robot",title:"Expérimentation en IA générative locale & personnalités",tags:["Local LLM","Prompt Engineering","DrawThings"],short:"IA en local, sans restriction de jetons.",desc:"Déploiement d’outils d’IA en local sans restriction de jetons. Utilisation de DrawThings pour la génération d’images haute qualité et travail d’ingénierie de prompt pour la création de personnalités d’assistants."},
+  {icon:"fa-brain",title:"Réseaux de neurones physique (projet de recherche CPGE)",tags:["Machine Learning","OCaml/Python","Modélisation"],short:"De la simulation au circuit physique.",desc:"Conception théorique d’un réseau de neurones avec calcul préalable des poids par simulation informatique, dans l’optique de reproduire l’inférence via un circuit physique composé de composants matériels."}
+];
+const skills = {
+  "Langages":["Langage C","OCaml","Python","Algorithmique & structures de données"],
+  "Systèmes & Hardware":["Linux/Unix","Architecture hardware PC","Logique numérique"],
+  "Outils & IA":["Déploiement IA local","Prompt engineering","DrawThings","Web scrapping"],
+  "Soft skills":["Débogage méthodique et résolution de problèmes complexes","Autonomie renforcée","Apprentissage rapide de nouvelles technologies","Adaptabilité sous contrainte"]
+};
+const $ = s => document.querySelector(s);
+
+// Cartes projets
+$("#grid").innerHTML = projects.map((p,i)=>`
+  <button data-i="${i}" class="card glow rounded-2xl p-6 text-left transition hover:-translate-y-1">
+    <i class="fa-solid ${p.icon} text-2xl text-violet-400"></i>
+    <h3 class="mt-3 text-lg font-bold text-white">${p.title}</h3>
+    <p class="mt-2 text-sm text-slate-400">${p.short}</p>
+    <div class="mt-4 flex flex-wrap gap-2">${p.tags.map(t=>`<span class="text-xs px-2.5 py-1 rounded-full bg-cyan-400/10 text-cyan-300">${t}</span>`).join("")}</div>
+  </button>`).join("");
+
+// Modale
+const modal = $("#modal"); let lastFocus;
+function openModal(i){
+  const p = projects[i]; lastFocus = document.activeElement;
+  $("#m-icon").className = "fa-solid "+p.icon+" text-3xl text-cyan-400";
+  $("#m-title").textContent = p.title; $("#m-desc").textContent = p.desc;
+  $("#m-tags").innerHTML = p.tags.map(t=>`<span class="text-xs px-2.5 py-1 rounded-full bg-violet-500/15 text-violet-300">${t}</span>`).join("");
+  modal.classList.remove("hidden"); document.body.style.overflow="hidden"; $("#m-close").focus();
+}
+function closeModal(){ modal.classList.add("hidden"); document.body.style.overflow=""; lastFocus && lastFocus.focus(); }
+$("#grid").addEventListener("click",e=>{ const b=e.target.closest("button[data-i]"); if(b) openModal(b.dataset.i); });
+$("#m-close").onclick = closeModal;
+modal.addEventListener("click",e=>{ if(e.target===modal) closeModal(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape" && !modal.classList.contains("hidden")) closeModal(); });
+
+// Onglets compétences
+function showTab(name){
+  document.querySelectorAll(".tab").forEach(t=>{ t.classList.toggle("active",t.dataset.t===name); t.setAttribute("aria-selected",t.dataset.t===name); });
+  $("#badges").innerHTML = skills[name].map(s=>`<span class="card glow px-4 py-2 rounded-full text-sm transition hover:scale-105 cursor-default">${s}</span>`).join("");
+}
+$("#tabs").innerHTML = Object.keys(skills).map(k=>`<button role="tab" data-t="${k}" class="tab px-4 py-2 rounded-full card text-sm font-medium transition">${k}</button>`).join("");
+$("#tabs").addEventListener("click",e=>{ const t=e.target.closest(".tab"); if(t) showTab(t.dataset.t); });
+showTab("Langages");
+
+// Apparition au scroll
+const io = new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add("on"); io.unobserve(x.target);} }),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+// Menu mobile
+$("#burger").onclick = ()=>{ $("#mobmenu").classList.toggle("hidden"); $("#mobmenu").classList.toggle("flex"); };
+$("#mobmenu").addEventListener("click",e=>{ if(e.target.tagName==="A"){ $("#mobmenu").classList.add("hidden"); $("#mobmenu").classList.remove("flex"); } });
+
+// Formulaire factice
+$("#form").addEventListener("submit",e=>{ e.preventDefault(); e.target.reset(); $("#sent").classList.remove("hidden"); });
+</script>
+</body>
+</html>
