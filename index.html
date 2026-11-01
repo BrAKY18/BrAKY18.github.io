@@ -52,7 +52,10 @@
 <!-- HERO -->
 <header id="accueil" class="bg-grid min-h-screen flex items-center pt-20 pb-12">
   <div class="max-w-4xl mx-auto px-5">
-    <h1 class="text-5xl sm:text-7xl font-extrabold text-white tracking-tight">Brabri <span class="grad">Ilan</span></h1>
+    <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+      <img src="photo_ilan.jpeg" alt="Ilan Brabri" width="160" height="160" onerror="this.style.display='none'" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-2 border-cyan-400/70 ring-4 ring-violet-500/30 shadow-[0_0_45px_-5px_#22d3ee]">
+      <h1 class="text-5xl sm:text-7xl font-extrabold text-white tracking-tight">Brabri <span class="grad">Ilan</span></h1>
+    </div>
     <p class="mt-4 text-lg sm:text-xl text-cyan-300 font-medium">Étudiant Ingénieur ENSEEIHT — Spécialité 3EA (Électronique, Énergie Électrique, Automatique)</p>
     <p class="mt-6 max-w-2xl leading-relaxed text-slate-300">Passionné par le hardware, le software et l’ingénierie électrique, j’aime explorer et comprendre les systèmes dans leur globalité. La prépa m’a transmis une méthode rigoureuse de résolution de problèmes et de débogage méthodique, des compétences que j’applique autant au développement logiciel qu’aux systèmes physiques.</p>
     <div class="mt-8 flex flex-wrap gap-3">
@@ -77,7 +80,7 @@
         <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/Q5fBRpbC2sI" title="Présentation vidéo" loading="lazy" allowfullscreen></iframe>
       </div>
     </div>
-    <p class="leading-relaxed text-lg">Retrouvez en 2 minutes mon parcours, mes motivations et ma vision de l’ingénierie.</p>
+    <p class="leading-relaxed text-lg">Retrouvez en 3 minutes mon parcours, mes motivations et ma vision de l’ingénierie.</p>
   </div>
 </section>
 
@@ -194,8 +197,8 @@ const projects = [
   {icon:"fa-spider",title:"Bot de scrapping & analyse de marché hardware",tags:["Python","Web Scrapping","Hardware PC"],short:"Annonces Leboncoin et composants informatiques.",github:"",desc:"Découverte du scrapping d’annonces Leboncoin, gestion des restrictions robots/captchas et analyse comparative des composants informatiques pour l’achat-revente et l’assemblage personnalisé de machines."},
   {icon:"fa-gamepad",title:"Moteur de jeu 2 joueurs en C (Snake)",tags:["Langage C","kbhit / ANSI","E/S Système"],short:"Snake à deux joueurs, entrées non-bloquantes.",github:"",desc:"Moteur de jeu Snake 2 joueurs en C, extension avancée d’un projet académique : gestion des entrées clavier non-bloquantes (kbhit / séquences ANSI), manipulation de structures de données dynamiques, gestion de la mémoire et persistance du meilleur score dans un fichier texte."},
   {icon:"fa-microchip",title:"TIPE — Conception de processeur sur table d’essai",tags:["Logique numérique","Hardware","Électronique"],short:"Les blocs fondamentaux d’un CPU.",github:"",desc:"Étude et initiation à la création des blocs fondamentaux d’un CPU (gestion de l’horloge système, registres et circuits combinatoires/séquentiels)."},
-  {icon:"fa-robot",title:"Stack IA locale auto-hébergée & personnalités",tags:["Ollama","Open WebUI","DrawThings","Prompt Engineering"],short:"Ollama, Open WebUI et DrawThings en local.",github:"",desc:"Stack IA locale auto-hébergée (Ollama, Open WebUI & DrawThings) : déploiement d’outils d’IA en local sans restriction de jetons, génération d’images haute qualité avec DrawThings et travail d’ingénierie de prompt pour la création de personnalités d’assistants."},
-  {icon:"fa-brain",title:"Réseaux de neurones physique (projet de recherche CPGE)",tags:["Machine Learning","OCaml/Python","Modélisation"],short:"De la simulation au circuit physique.",github:"",desc:"Conception théorique d’un réseau de neurones avec calcul préalable des poids par simulation informatique, dans l’optique de reproduire l’inférence via un circuit physique composé de composants matériels."}
+  {icon:"fa-robot",title:"Stack IA locale auto-hébergée & personnalités",tags:["Ollama","Open WebUI","DrawThings","Prompt Engineering"],short:"Ollama, Open WebUI et DrawThings en local.",github:"",desc:"Stack IA locale auto-hébergée (Ollama, Open WebUI & DrawThings) : déploiement d’outils d’IA en local sans restriction de jetons, génération d’images haute qualité avec DrawThings et travail d’ingénierie de prompt pour la création et l’animation d’une persona IA sur les réseaux sociaux."},
+  {icon:"fa-brain",title:"Réseaux de neurones physique (projet de recherche CPGE)",tags:["Machine Learning","Python","Modélisation"],short:"De la simulation au circuit physique.",github:"",desc:"Conception théorique d’un réseau de neurones avec calcul préalable des poids par simulation informatique, dans l’optique de reproduire l’inférence via un circuit physique composé de composants matériels."}
 ];
 const skills = {
   "Langages":[{i:"fa-solid fa-c",n:"C"},{i:"fa-solid fa-code",n:"OCaml"},{i:"fa-brands fa-python",n:"Python"},{i:"fa-solid fa-diagram-project",n:"Algorithmique & structures de données"}],
